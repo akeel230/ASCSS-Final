@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+    <meta charest="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCSS PTY LTD</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="icons">
+           <div id="menu-btn" class="fas fa-bars"></div>
+           <div id="login-btn" class="fas fa-user"></div>
+        </div>
+     
+         <nav class="navbar">
+           <a href="index.htm">Home</a>
+           <a href="contact.html">Contact Us</a>
+           <a href="quote.html">Quote</a>
+          
+           <a href="jobs.html">Jobs</a>
+        </nav>
+     
+     </header>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firstHalf">       
+                <p class="text-big">Please use Contact us Pages to get a quote</p>
+    
+                <p class="text-small">
+                    OR <br> You can Contact Us via <br><a href = "mailto: amry@ascss.com.au"> amry@ascss.com.au</a>
+                    
+                </p>
+    
+                
+            </div>
+        </div>
+    </section>
+
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js"> </script>
+    
+        <script>
+    
+            lightGallery(document.querySelector('.projects .box-container'));
+    
+        </script>
+    
+    <script>
+       /* javascript Code */
+       let slideIndex = 1;
+       showSlides(slideIndex);
+    
+       function plusSlides(n) {
+          showSlides((slideIndex += n));
+       }
+    
+       function currentSlide(n) {
+          showSlides((slideIndex = n));
+       }
+    
+       function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+             slideIndex = 1;
+          }
+          if (n < 1) {
+             slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+       }
+       </script>
+</body>
+</html>
