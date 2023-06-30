@@ -351,9 +351,9 @@ section {
   bottom: 0;
   left: initial;
   right: 0;
-  height: 7rem;
-  width: 7rem;
-  line-height: 7rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
   background: var(--white);
 }
 
@@ -639,11 +639,11 @@ img.show {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 7px;
   margin-top: -22px;
   color: rgb(164, 48, 48);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   transition: 1s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -715,7 +715,7 @@ img.show {
   .prev,
   .next,
   .text {
-     font-size: 11px;
+     font-size: 8px;
   }
 }
 
