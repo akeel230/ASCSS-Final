@@ -1,0 +1,278 @@
+body{
+    font-family: Comic Sans MS ;
+    background-color:rgb(255,255,255);
+    overflow-x: hidden;
+}
+/* #blurdiv{
+    opacity: 0.2; */
+/* } */
+
+#container{
+    width:70%;
+    height:600px;
+    margin: 0 auto;
+    display:flex;
+    position:fixed;
+    background-color:rgb(144, 176, 28);
+    border-color: black;
+    border: 1% solid;
+    top:10%;
+    bottom: 20%;
+    left: 15%;
+    z-index:2;
+    border-radius: 5px 5px;
+    
+}
+.container1{
+    display: flex;
+    position: absolute; 
+    top: 15%;
+    width: 100%;
+    height: 200px;
+    z-index: 3;
+}
+.container2{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    height: 500px;
+    width: 100%;
+    z-index: 3;
+}
+.container3{
+    display: flex;
+    position: absolute;
+    background-color:rgb(240,240,240);
+    top: 130%;
+    left: 1%;
+    width: 98%;
+    height: 700px;
+    z-index: 3;
+}
+
+.H3{
+    top:20%;
+    position:absolute;
+    left:5%;
+    font-size:30px;
+}
+.cancel1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    height: 10%;
+    width: 20%;
+    top: 60%;
+    left: 27%;
+    position: absolute;
+    font-size: 95%;
+    font-size:x-large;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.submit01{
+    height: 10%;
+    width: 20%;
+    top: 60%;
+    left: 23%;
+    position: absolute;
+    font-size: 95%;
+    font-size:x-large;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.email01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60%;
+    top: 45%;
+    left: 15%;
+    position: absolute;
+    font-size: 80%;
+}
+.conc{
+    font-size: 50px;
+    display: inline;
+    top: 0px;
+    left: 35%;
+    position: absolute;
+
+}
+.address01{
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    
+}
+.address02{
+    position: absolute;
+    top: 44%;
+    font-size: 20px;
+}
+.address03{
+    position: absolute;
+    top:64%;
+    font-size: 20px;
+}
+.address04{
+    position: absolute;
+    top:84%;
+    font-size: 20px;
+    
+}
+#address1{
+    position: absolute;
+    top:20%;
+    left:12% ;
+    width: 35%;
+    height:10%;
+    font-size: 20px;
+}
+#address2{
+    position: absolute;
+    top:40%;
+    left: 12%;
+    width: 35%;
+    height:10%;
+    font-size: 20px;
+}
+#address3{
+    position: absolute;
+    top:60%;
+    left: 12%;
+    width: 20%;
+    height:10%;
+    font-size: 20px;
+}
+#address4{
+    position: absolute;
+    top:80%;
+    left: 12%;
+    width: 15%;
+    height:10%;
+    font-size: 20px;
+}
+#Addresshead{
+    font-size: 30px;
+    text-align:center;
+    left: 45%;
+    position: relative;
+    
+}
+.nam{
+    position: absolute;
+    top:10%;
+    font-size: 25px;
+}
+.contno{
+    position: absolute;
+    top:50%;
+    font-size: 20px;
+    
+}
+#name{
+    position: absolute;
+    top:41%;
+    left: 30%;
+    width: 30%;
+    height:10%;
+    font-size: 20px;
+}
+#phnno{
+    position: absolute;
+    top:50%;
+    width: 30%;
+    height:15%;
+    left: 12%;
+    font-size: 15px;
+}
+#details01{
+    font-size: 30px;
+    text-align:center;
+    left: 30%;
+    position: relative;
+    
+}
+#details{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+    font-size: 20px;
+    text-align:left;
+    resize: none;
+    padding: 10px 15px;
+    background-color: rgb(250,250,250);
+    font-weight: bold;
+}
+#dropdown01{
+    position: absolute;
+    top:43%;
+    font-size: 20px;
+    left: 22%;
+    height: 10%;
+    border-radius: 20% 20%;
+    font-weight: bold;
+}
+.email03{
+    position: absolute;
+    top:25%;
+    font-size: 20px;
+    
+}
+#email02{
+    position: absolute;
+    top:20%;
+    width: 20%;
+    height:15%;
+    left: 12%;
+    font-size: 15px;
+    
+}
+#btn1{
+    position: absolute;
+    top:55%;
+    width: 5%;
+    height:10%;
+    left: 45%;
+    font-size: 15px;
+}
+#btn2{
+    position: absolute;
+    top:55%;
+    width: 5%;
+    height:10%;
+    left: 50%;
+    font-size: 15px;
+}
+#submit02{
+    position: absolute;
+    top: 90%;
+    height: 8%;
+    width: 15%;
+    left: 42%;
+    font-size: large;
+    text-align: center;
+}
+input[type=textbox],
+input[type=tel],
+input[type=email],
+#submit02
+
+{
+    padding: 10px 15px;
+    background-color: rgb(10,15,15);
+    font-weight: bold;
+    color: rgb(255,250,255);
+    border-radius: 10px 10px;
+    border-color: rgb(35, 200, 87);
+    border: 50% solid;
+}
+label{
+    font-family: 'Lobster', cursive;
+    font-size:40px;
+    left: 3%;
+}
