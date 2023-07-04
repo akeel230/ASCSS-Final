@@ -412,14 +412,14 @@ section {
 }
 
 .services .box-container .box h3 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: rgb(182, 46, 46);
   text-transform: capitalize;
   padding: 1rem 0;
 }
 
 .services .box-container .box p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: black;
   line-height: 2;
   font-weight: 500;
@@ -503,8 +503,8 @@ h4{
 
 .footer-basic {
   padding:40px 0;
-  background-color:#ffffff;
-  color:#5a5858;
+  background-color:#bcb9b9;
+  color:#000000;
 }
 
 .footer-basic ul {
@@ -568,15 +568,11 @@ h4{
   background-size: cover;
 }
 
-.firstsection {
-  margin-top: 20%;
-}
-
 .box-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(154, 19, 19);
+  color:#aa2a2a;
   max-width: 50%;
   margin: auto;
   height: 80%;
@@ -721,3 +717,65 @@ img.show {
 
 
 
+input, select, textarea {
+  font-size: small;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  font-size: small;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #ffffff;
+  color: rgb(107, 35, 35);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(107, 35, 35);
+  color: white ;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(193, 193, 193);
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
