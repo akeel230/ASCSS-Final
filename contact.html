@@ -38,7 +38,7 @@
      
      </header>
 
-     <section class="services">
+   <section class="services">
       <section class="background firstsection">
          <div class="box-main">
              <div class="firstHalf">       
@@ -50,59 +50,68 @@
                  <p class="center"
                     style="text-decoration:none;
                            color:rgb(178, 27, 27);">
-                     Fill out the form below we will reach out to you soon
+                     Please fill out the enquiry form below we will be in touch with you shortly.
                  </p>
      
              </div>
          </div>
      </section>
-   
+   <form>
    <div class="container">
      <div class="row">
        <div class="col-25">
-         <label for="fname">Full Name</label>
+         <label for="fname">Full Name :</label>
        </div>
        <div class="col-75">
           <input type="text" id="fullname" placeholder="Full Name" required > 
        </div>
      </div>
+
+    
      <div class="row">
        <div class="col-25">
-         <label for="fname">Business Name</label>
+         <label for="fname">Business Name :</label>
        </div>
        <div class="col-75">
           <input type="text" id="BName" placeholder="If available only" > 
        </div>
      </div>
+
      <div class="row">
        <div class="col-25">
-         <label for="fname">Telephone Number</label>
+         <label for="fname">Telephone Number :</label>
        </div>
        <div class="col-75">
           <input type="tel" id="contact" placeholder="Contact Number" required  > 
        </div>
      </div>
+
      <div class="row">
        <div class="col-25">
-         <label for="lname">Email</label>
+         <label for="lname">Email :</label>
        </div>
        <div class="col-75">
           <input type="email" placeholder="Email" id="email_id" required>
        </div>
      </div>
+
      <div class="row">
        <div class="col-25">
-         <label for="subject">Your Enquiry</label>
+         <label for="subject">Your Enquiry :</label>
        </div>
        <div class="col-75">
           <textarea name="message" id="message" cols="50" rows="20" required placeholder ="Enter your message here" style="height:200px"></textarea>
        </div>
      </div>
+
      <br>
+
      <div class="row">
        <input type="submit" value="Submit" onclick=" SendMail()">
+       <input type="reset" value="Reset">
      </div>
-     </form>
+
+   </form>
    </div>
    </section>
 

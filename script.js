@@ -6,8 +6,8 @@ function SendMail() {
         contact : document.getElementById("contact").value,
         message : document.getElementById("message").value
     }
-    emailjs.send("service_5c6drj8", "template_tkbwb6k", params).then(function (res) {
-        alert("We have received your message, and will reach back to you soon! " + res.status)
+    emailjs.send("service_5c6drj8", "template_2rve0yx", params).then(function (res) {
+        alert("Thank You! We have received your Enquiry, and will reach back to you soon! ")
     })
 }
 
@@ -23,6 +23,6 @@ function SendJob() {
         injury : document.getElementById("injury").value
     }
     emailjs.send("service_5c6drj8", "template_tkbwb6k", params).then(function (res) {
-        alert("We have received your Job Application, and will reach back to you soon! " + res.status)
+        alert("Thank You! We have received your Job Application, and will reach back to you soon!")
     })
 }

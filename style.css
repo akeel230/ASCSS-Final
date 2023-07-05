@@ -117,7 +117,7 @@ section {
 }
 
 .header .logo span {
-  color: rgb(184, 44, 44);
+  color: rgb(188, 0, 45);
   font-weight: 700;
 }
 
@@ -127,7 +127,7 @@ section {
   text-transform: capitalize;
   margin: 0 1rem;
   font-weight: 700;
-  color: rgb(175, 37, 37);
+  color: rgb(188, 0, 45);
   
 }
 
@@ -142,7 +142,7 @@ section {
   line-height: 5rem;
   font-size: 2rem;
   background: var(--light-bg);
-  color: rgb(182, 36, 36);
+  color: rgb(188, 0, 45);
   cursor: pointer;
   text-align: center;
   margin-left: .3rem;
@@ -413,7 +413,7 @@ section {
 
 .services .box-container .box h3 {
   font-size: 1.5rem;
-  color: rgb(182, 46, 46);
+  color: rgb(188, 0, 45);
   text-transform: capitalize;
   padding: 1rem 0;
 }
@@ -503,8 +503,7 @@ h4{
 
 .footer-basic {
   padding:40px 0;
-  background-color:#bcb9b9;
-  color:#000000;
+  background-color: #fdfdfd;
 }
 
 .footer-basic ul {
@@ -543,14 +542,14 @@ h4{
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:1px solid #b32626;
+  border:1px solid #BC002D;
   margin:0 8px;
   color:inherit;
   opacity:0.75;
 }
 
 .footer-basic .social > a:hover {
-  color: #ba2e2e;
+  color: #BC002D;
   background-color: #010000;
 }
 
@@ -558,7 +557,7 @@ h4{
   margin-top:3px;
   text-align:center;
   font-size:13px;
-  color:#aa2a2a;
+  color:#BC002D;
   margin-bottom:0;
 }
 
@@ -572,7 +571,7 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#aa2a2a;
+  color:#BC002D;
   max-width: 50%;
   margin: auto;
   height: 80%;
@@ -637,13 +636,13 @@ img.show {
   width: auto;
   padding: 7px;
   margin-top: -22px;
-  color: rgb(164, 48, 48);
+  color: rgb(188, 0, 45);
   font-weight: bold;
   font-size: 15px;
   transition: 1s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: rgb(156, 72, 72);
+  background-color: rgb(188, 0, 45);
 }
 
 /* Position the "next button" to the right */
@@ -728,28 +727,31 @@ input, select, textarea {
 
 label {
   font-size: small;
-  padding: 12px 12px 12px 0;
+  padding: 12px 12px 12px 12px;
   display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #BC002D;
 }
 
 input[type=submit] {
   background-color: #ffffff;
-  color: rgb(107, 35, 35);
+  color: rgb(188, 0, 45);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  border: 1px solid #BC002D;
   cursor: pointer;
   float: right;
 }
 
 input[type=submit]:hover {
-  background-color: rgb(107, 35, 35);
+  background-color: rgb(188, 0, 45);
   color: white ;
 }
 
 .container {
   border-radius: 5px;
-  background-color: rgb(193, 193, 193);
+  background-color: rgb(255, 254, 254);
   padding: 20px;
 }
 
