@@ -1,0 +1,56 @@
+#contain1, #contain2, #contain3 {
+    width: 20%;
+    border-style: solid;
+    border-color: rgb(10, 150, 200);
+    border-width: 10px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#link1, #link2, #link3 {
+    display:block;
+    color: rgb(200, 150, 200);
+    text-align:left;
+    margin-top: 2px;
+}
+
+#link1:hover, #link2:hover, #link3:hover {
+    color: rgb(200, 150, 200);
+}
+#link1{
+    margin-top: -12%;
+    
+}
+#link2{
+    margin-top: -6%;
+}
+#link3{
+    margin-top: -6%;
+}
+#name1, #name2, #name3{
+    text-align: left;
+    font-family:Geneva, Tahoma, sans-serif;
+    margin-top: 2px;
+}
+article{
+    border: solid 2px;
+    width:95%;
+    margin-top: 200vh;
+    margin: auto;
+    margin: 2%;
+}
+#name1{
+    
+}
+article p{
+    display: block;
+    padding: 3px 10px;
+    text-align: justify;
+}
+h1{
+    margin-top: 4%;
+    text-align: center;
+}
