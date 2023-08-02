@@ -46,65 +46,64 @@
 </section>
 
 <div class="slideshow-container">
-      <div class="mySlides fade">
+      <!-- <div class="mySlides fade">
        
-         <img class="show" src="images/Pearl 1.jpeg" />
+         <img class="show" id="img1" src="" />
       </div>
 
       <div class="mySlides fade">
         
-         <img class="show" src="images/84 cutter.JPG" />
+         <img class="show" id="img2" src="images/84 cutter.JPG" />
       </div>
 
       <div class="mySlides fade">
          
-         <img class="show" src="images/portfolio12.jpg" />
+         <img class="show" id="img3" src="images/portfolio12.jpg" />
       </div>
 
       <div class="mySlides fade">
          
-         <img class="show" src="images/portfolio11.jpg" />
+         <img class="show" id="img4" src="images/portfolio11.jpg" />
       </div>
 
       <div class="mySlides fade">
          
-         <img class="show" src="images/portfolio10.jpg" />
+         <img class="show" id="img5" src="images/portfolio10.jpg" />
       </div>
 
       <div class="mySlides fade">
         
-         <img class="show" src="images/russel 2.jpeg" /> 
+         <img class="show" id="img6" src="images/russel 2.jpeg" /> 
       </div>
 
       <div class="mySlides fade">
 
-         <img class="show" src="images/Niche.jpeg" />
-      </div>
-
-      <div class="mySlides fade">
-         
-         <img class="show" src="images/you & i .jpeg" />
+         <img class="show" id="img7" src="images/Niche.jpeg" />
       </div>
 
       <div class="mySlides fade">
          
-         <img class="show" src="images/ASCSS1.jpg" />
+         <img class="show" id="img8" src="images/you & i .jpeg" />
+      </div>
+
+      <div class="mySlides fade">
+         
+         <img class="show" id="img9" src="images/ASCSS1.jpg" />
       </div>
 
       <div class="mySlides fade">
         
-         <img class="show" src="images/ascss5.jpg" />
+         <img class="show" id="img10" src=/> -->
       </div>
 
 
 
 
 
-      <a class="prev" onclick="plusSlides(-1)">prev</a>
-      <a class="next" onclick="plusSlides(1)">next</a>
+     
    </div>
    <br />
-   <div style="text-align: center">
+   <!-- <div style="text-align: center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
@@ -115,7 +114,7 @@
       <span class="dot" onclick="currentSlide(8)"></span>
       <span class="dot" onclick="currentSlide(9)"></span>
       <span class="dot" onclick="currentSlide(10)"></span>
-   </div>
+   </div> -->
 
 
 <section class="services" id="services">
@@ -246,37 +245,70 @@
 	</script>
 
 <script>
-   /* javascript Code */
-   let slideIndex = 1;
-   showSlides(slideIndex);
+   // /* javascript Code */
+   // let slideIndex = 1;
+   // showSlides(slideIndex);
 
-   function plusSlides(n) {
-      showSlides((slideIndex += n));
-   }
+   // function plusSlides(n) {
+   //    showSlides((slideIndex += n));
+   // }
 
-   function currentSlide(n) {
-      showSlides((slideIndex = n));
-   }
+   // function currentSlide(n) {
+   //    showSlides((slideIndex = n));
+   // }
 
-   function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
-         slideIndex = 1;
-      }
-      if (n < 1) {
-         slideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-   }
+   // function showSlides(n) {
+   //    let i;
+   //    let slides = document.getElementsByClassName("mySlides");
+   //    let dots = document.getElementsByClassName("dot");
+   //    if (n > slides.length) {
+   //       slideIndex = 1;
+   //    }
+   //    if (n < 1) {
+   //       slideIndex = slides.length;
+   //    }
+   //    for (i = 0; i < slides.length; i++) {
+   //       slides[i].style.display = "none";
+   //    }
+   //    for (i = 0; i < dots.length; i++) {
+   //       dots[i].className = dots[i].className.replace(" active", "");
+   //    }
+   //    slides[slideIndex - 1].style.display = "block";
+   //    dots[slideIndex - 1].className += " active";
+   // }
+   
+
+   var images =[];
+   images.push("images/Pearl 1.jpeg");
+   images.push("images/84 cutter.JPG");
+   images.push("images/portfolio12.jpg");
+   images.push("images/portfolio11.jpg");
+   images.push("images/portfolio10.jpg");
+   images.push("images/russel 2.jpeg");
+   images.push("images/Niche.jpeg");
+   images.push("images/you & i .jpeg");
+   images.push("images/ASCSS1.jpg");
+   images.push("images/ascss5.jpg");
+   
+   let currentImageIndex = 0;
+   const slideshowContainer = document.querySelector(".slideshow-container");
+
+function slideshow() {
+  if (currentImageIndex >= images.length) {
+    currentImageIndex = 0;
+  }
+
+  const imageUrl = images[currentImageIndex];
+  slideshowContainer.innerHTML = `<img class="show" src="${imageUrl}" alt="">`;
+  currentImageIndex++;
+
+  setTimeout(slideshow, 3000); // Change image every 3 seconds (adjust as needed).
+}
+
+// Start the slideshow
+slideshow();
+
+   
    </script>
 
 </body>
